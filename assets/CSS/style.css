@@ -1,0 +1,106 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin-bottom: 5px;
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+}
+
+header .logo p {
+    font-size: 1.2em;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.content {
+    flex: 2;
+}
+
+.image-text {
+    display: flex;
+    align-items: center;
+}
+
+.image-text img {
+    width: 300px;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+    padding-left: 20px;
+}
+
+aside h3 {
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #b30000;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    background-color: #ffcc00;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    color: black;
+}
