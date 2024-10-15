@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions in Dubai</title>
+
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            color: #333333;
+        }
+
+        .layout {
+            display: flex;
+            max-width: 1000px;
+            margin: 40px auto;
+            gap: 20px;
+            align-items: stretch;
+        }
+
+        .content {
+            flex: 3;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .attraction-container {
+            max-width: 1000px;
+            width: 100%;
+            margin: 40px auto;
+            padding: 0;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        footer.info-line {
+            padding: 10px;
+            background: #303030;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .attraction {
+            display: flex;
+            width: 100%;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin-bottom: 20px;
+            align-items: stretch;
+        }
+
+        .attraction-image {
+            flex-basis: 40%;
+            max-width: 40%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .attraction-description {
+            flex-basis: 60%;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1, h2, h3, p, a, strong, ul li {
+            color: #333333;
+        }
+        
+        h1 {
+            color: #ffffff;
+        }
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-header">
+        <h1>Explore Dubai</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li style="color: white"><a href="attractions.html">Attractions</a></li>
+                <li><a href="car.html">Car Rental & Taxi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="layout">
+            <aside>
+                <h2>Must-Visit Attractions</h2>
+                <ul>
+                    <li>Burj Khalifa</li>
+                    <li>Dubai Mall</li>
+                    <li>Desert Safari</li>
+                    <li>Palm Jumeirah</li>
+                    <li>Dubai Marina</li>
+                </ul>
+            </aside>
+            <section class="content">
+                <h2>Top Attractions in Dubai</h2>
+                <p>Discover the stunning attractions in Dubai that promise unforgettable experiences. Explore the world’s tallest buildings, luxurious malls, and traditional souks, or embark on thrilling desert adventures.</p>
+            </section>
+        </div>
+
+        <div class="attraction-container">
+            <!-- Attraction 1 -->
+            <div class="attraction">
+                <img src="assets/images/burj-khalifa.jpg" alt="Burj Khalifa" class="attraction-image">
+                <div class="attraction-description">
+                    <h3>1. Burj Khalifa</h3>
+                    <p>Stand on the observation deck of the world's tallest building and enjoy panoramic views of Dubai.</p>
+                    <p><strong>Address:</strong> 1 Sheikh Mohammed bin Rashid Blvd, Dubai, UAE</p>
+                    <p><strong>Opening Hours:</strong> 8:00 AM - 11:00 PM</p>
+                    <p><a href="https://maps.app.goo.gl/Eybju1vXbA8SH9ud7" target="_blank">View on Google Maps</a></p>
+                </div>
+            </div>
+
+            <!-- Attraction 2 -->
+            <div class="attraction">
+                <img src="assets/images/dubai-mall.jpg" alt="Dubai Mall" class="attraction-image">
+                <div class="attraction-description">
+                    <h3>2. Dubai Mall</h3>
+                    <p>Indulge in luxury shopping, world-class dining, and entertainment options, including the Dubai Aquarium.</p>
+                    <p><strong>Address:</strong> Financial Center Road, Downtown Dubai, UAE</p>
+                    <p><strong>Opening Hours:</strong> 10:00 AM - 12:00 AM</p>
+                    <p><a href="https://maps.app.goo.gl/jn2NPmuCXP9etvta8" target="_blank">View on Google Maps</a></p>
+                </div>
+            </div>
+
+            <!-- Attraction 3 -->
+            <div class="attraction">
+                <img src="assets/images/desert-safari.jpg" alt="Desert Safari" class="attraction-image">
+                <div class="attraction-description">
+                    <h3>3. Desert Safari</h3>
+                    <p>Experience the thrill of dune bashing, camel rides, and traditional Bedouin camp activities in the Dubai desert.</p>
+                    <p><strong>Pick-up Location:</strong> Various, depends on tour operator</p>
+                    <p><strong>Timing:</strong> Typically 3:00 PM - 9:00 PM</p>
+                    <p><a href="https://maps.app.goo.gl/w44bBvLKrCPm8dEh8" 
+target="_blank">Find Tours</a></p>
+                </div>
+            </div>
+
+            <!-- Attraction 4 -->
+            <div class="attraction">
+                <img src="assets/images/palm-jumeirah.jpg" alt="Palm Jumeirah" class="attraction-image">
+                <div class="attraction-description">
+                    <h3>4. Palm Jumeirah</h3>
+                    <p>Explore the world-famous man-made island, known for its luxurious hotels, resorts, and dining options.</p>
+                    <p><strong>Activities:</strong> Beach clubs, water sports, dining, and the Atlantis Aquaventure Waterpark.</p>
+                    <p><a href="https://maps.app.goo.gl/F8CHFz69xRs934u47" 
+target="_blank">View on Google Maps</a></p>
+                </div>
+            </div>
+
+            <!-- Attraction 5 -->
+            <div class="attraction">
+                <img src="assets/images/dubai-marina.jpg" alt="Dubai Marina" class="attraction-image">
+                <div class="attraction-description">
+                    <h3>5. Dubai Marina</h3>
+                    <p>Enjoy the vibrant lifestyle at Dubai Marina with its stunning skyline, bustling cafes, and luxurious yachts.</p>
+                    <p><strong>Activities:</strong> Stroll along the Marina Walk, dining, shopping, and yacht tours.</p>
+                    <p><a href="https://maps.app.goo.gl/nXDr4eDYUq9MAZrs7" 
+target="_blank">View on Google Maps</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="info-line">
+        <p>&copy; 2024 Fall Zainab Al-Zanbouri's Favorite Students. All rights reserved.</p>
+    </footer>
+</body>
+</html>
