@@ -1,106 +1,212 @@
-/* Reset some basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Reset some default styles */
+
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #333333; /* Neutral dark gray for text */
+    background-color: #f5f5f5; /* Light gray background */
+    font-size: 1.2rem;
 }
 
-header {
-    background-color: #ffcc00;
-    padding: 20px;
+/* Header styling */
+.sticky-header {
+    background: #212121; /* Dark gray */
+    color: #ffffff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: none; /* No shadow */
+    z-index: 1000;
+    border-radius:10px;
+}
+
+.sticky-header h1 {
     text-align: center;
-}
-
-header .logo h1 {
+    font-size: 1.5rem;
     margin-bottom: 5px;
-    color: white;
-    font-family: 'Arial Black', sans-serif;
 }
 
-header .logo p {
-    font-size: 1.2em;
-    color: black;
-}
-
-nav ul {
-    list-style: none;
+.sticky-header nav ul {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 }
 
-nav ul li {
-    margin: 0 20px;
+.sticky-header nav ul li {
+    margin: 0 15px;
 }
 
-nav ul li a {
+.sticky-header nav ul li a {
+    color: #dcdcdc; /* Light gray */
     text-decoration: none;
-    color: black;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.sticky-header nav ul li a:hover {
+    color: #ffffff; /* White on hover */
 }
 
+/* Main content styling */
 main {
-    display: flex;
+    max-width: 1000px;
+    margin: 10px auto;
     padding: 20px;
 }
 
-.content {
-    flex: 2;
-}
-
-.image-text {
-    display: flex;
-    align-items: center;
-}
-
-.image-text img {
-    width: 300px;
-    margin-right: 20px;
-}
-
-aside {
-    flex: 1;
-    padding-left: 20px;
-}
-
-aside h3 {
-    margin-bottom: 10px;
-}
-
-aside ul {
-    list-style-type: none;
-}
-
-aside ul li {
-    margin-bottom: 10px;
-}
-
-aside ul li a {
-    text-decoration: none;
-    color: #b30000;
-}
-
-aside ul li a:hover {
-    text-decoration: underline;
-}
-
-footer {
+h2 {
+    font-size: 2rem;
     text-align: center;
-    background-color: #ffcc00;
-    padding: 10px;
-    margin-top: 20px;
+    color: #212121; /* Dark gray */
+    margin-bottom: 20px;
 }
 
-footer p {
-    color: black;
+h3 {
+    color: #ffffff; /* White for section headings */
+    margin-bottom: 10px;
+}
+
+p {
+    color: #d4d4d4; /* Light gray for paragraphs within sections */
+}
+
+/* Section styling with background images */
+.section-background {
+    height: 500px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark overlay */
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+/* Info line and footer styling */
+.info-line {
+    background: #303030; /* Medium dark gray */
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.info-line p, #footer {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #a8a8a8; /* Gray for footer text */
+}
+
+/* Layout styling to align info-box and info-box2 */
+.layout {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly */
+    max-width: 1000px;
+    margin: 40px auto;
+    gap: 20px;
+}
+
+/* First aside containing the info-box */
+aside {
+    flex: 2; /* Takes more space to appear wider */
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    float: left;
+    width:62%;
+}
+
+/* Second aside with info-box2 */
+.aside2 {
+    flex: 1; /* Takes less space to appear narrower */
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top:30px;
+    border-radius: 8px;
+    float: left;
+    width:32%;
+}
+
+/* First info-box */
+.info-box {
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: #333333; /* Text color */
+    background-color: rgb(208, 202, 202);
+    width: 100%;
+}
+
+/* Second info-box inside aside2 */
+.info-box2 {
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: #333333; /* Text color */
+    background-color: rgb(242, 233, 233);
+    width:100%;
+}
+
+/* Info-box heading styles */
+.info-box h3,
+.info-box2 h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info-box ul,
+.info-box2 ul {
+    list-style: disc;
+    padding-left: 0;
+}
+
+.info-box ul li,
+.info-box2 ul li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.info-box ul li strong,
+.info-box2 ul li strong {
+    font-weight: bold;
+    color: #212121; /* Darker text for emphasis */
+}
+
+
+.content {
+    flex: 3;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.restaurant {
+    display: flex;
+    max-width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.restaurant-image {
+    flex: 1;
+    max-width: 200px;
+    display: block;
+    border-radius: 8px;
+}
+
+.restaurant-description {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.bottom {
+    margin-left: 15%;
+    margin-right: 15%;
 }
