@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels in Dubai</title>
+
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            color: #333333;
+        }
+
+        .layout {
+            display: flex;
+            max-width: 1000px;
+            margin: 40px auto;
+            gap: 20px;
+            align-items: stretch;
+        }
+
+        .content {
+            flex: 3;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .hotel-container {
+            max-width: 1000px;
+            width: 100%;
+            margin: 40px auto;
+            padding: 0;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        footer.info-line {
+            padding: 10px;
+            background: #303030;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .hotel {
+            display: flex;
+            width: 100%;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin-bottom: 20px;
+            align-items: stretch;
+        }
+
+        .hotel-image {
+            flex-basis: 40%;
+            max-width: 40%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .hotel-description {
+            flex-basis: 60%;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1, h2, h3, p, a, strong, ul li {
+            color: #333333;
+        }
+        
+        h1 {
+            color: #ffffff;
+        }
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-header">
+        <h1>Welcome To Dubai</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li style="color: white"><a href="hotels.html">Hotels</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="#">Car Rental & Taxi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="layout">
+            <aside>
+                <h2>Top Areas for Hotels</h2>
+                <ul>
+                    <li>Downtown Dubai</li>
+                    <li>Jumeirah Beach</li>
+                    <li>Marina</li>
+                    <li>Palm Jumeirah</li>
+                    <li>Business Bay</li>
+                </ul>
+            </aside>
+            <section class="content">
+                <h2>Top Hotels in Dubai</h2>
+                <p>Discover luxurious accommodations in Dubai with excellent amenities and breathtaking views. Enjoy the warm hospitality, stunning architecture, and exquisite dining options available at every turn. Whether you're looking for a beachfront escape or a city stay, Dubai's hotels offer something for everyone.</p>
+            </section>
+        </div>
+
+        <div class="hotel-container">
+            <!-- Hotel 1 -->
+            <div class="hotel">
+                <img src="/assets/images/burj-al-arab.jpg" alt="Burj Al Arab Hotel" class="hotel-image">
+                <div class="hotel-description">
+                    <h3>1. Burj Al Arab<br>★★★★★★★</h3>
+                    <p>An iconic symbol of luxury, offering exquisite service and world-class amenities. Enjoy unparalleled views from the comfort of your suite, dine at world-renowned restaurants, and experience unmatched luxury.</p>
+                    <p><strong>Phone:</strong> +971 234 5678</p>
+                    <p><strong>Address:</strong> Jumeirah St, Dubai, UAE</p>
+                    <p><strong>Amenities:</strong> Private beach, infinity pool, helicopter transfers, personal butler.</p>
+                    <p><strong>Price:</strong> $$$$ (Ultra-luxury)</p>
+                    <p><a href="https://maps.app.goo.gl/bJ2JaDxpF1rTdjcb8" target="_blank">View on Google Maps</a></p>
+                </div>
+            </div>
+
+            <!-- Hotel 2 -->
+            <div class="hotel">
+                <img src="/assets/images/atlantis.jpg" alt="Atlantis The Palm Hotel" class="hotel-image">
+                <div class="hotel-description">
+                    <h3>2. Atlantis The Palm<br>★★★★★</h3>
+                    <p>A luxurious resort known for its underwater suites and world-class entertainment. Indulge in water adventures at the Aquaventure Waterpark and explore the marine life at The Lost Chambers Aquarium.</p>
+                    <p><strong>Phone:</strong> +971 345 6789</p>
+                    <p><strong>Address:</strong> Crescent Road, The Palm Jumeirah, Dubai, UAE</p>
+                    <p><strong>Amenities:</strong> Water park access, aquarium, private beach, top-tier dining options.</p>
+                    <p><strong>Price:</strong> $$$ (High-end)</p>
+                    <p><a href="https://maps.app.goo.gl/y1rMQWVP5Jc7Phyz8" target="_blank">View on Google Maps</a></p>
+                </div>
+            </div>
+
+            <!-- Hotel 3 -->
+            <div class="hotel">
+                <img src="/assets/images/ritz-carlton.jpg" alt="The Ritz-Carlton Dubai" class="hotel-image">
+                <div class="hotel-description">
+                    <h3>3. The Ritz-Carlton Dubai<br>★★★★★</h3>
+                    <p>Offers lavish accommodations, fine dining, and a serene beachfront setting. Experience the luxurious spa treatments and family-friendly amenities at its finest.</p>
+                    <p><strong>Phone:</strong> +971 456 7890</p>
+                    <p><strong>Address:</strong> Al Mamsha Street, JBR, Dubai, UAE</p>
+                    <p><strong>Amenities:</strong> Luxurious spa, outdoor pools, kids club, gourmet dining.</p>
+                    <p><strong>Price:</strong> $$$ (High-end)</p>
+                    <p><a href="https://maps.app.goo.gl/1jQzqmS6ZTBUYgWw7" target="_blank">View on Google Maps</a></p>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer class="info-line">
+        <p>&copy; 2024 Fall Zainab Al-Zanbouri's Favorite Students. All rights reserved.</p>
+    </footer>
+</body>
+</html>
