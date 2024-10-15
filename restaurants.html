@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants in Dubai</title>
+
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <style>
+        * {
+            box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+            color: #333333; /* Dark color for all text */
+        }
+
+        /* Layout styling */
+        .layout {
+            display: flex;
+            max-width: 1000px;
+            margin: 40px auto;
+            gap: 20px;
+            align-items: stretch;
+        }
+
+        .content {
+            flex: 3;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .restaurant-container {
+            max-width: 1000px;
+            width: 100%;
+            margin: 40px auto; /* Consistent margin as .layout */
+            padding: 0; /* Ensures no extra padding */
+        }
+
+        aside {
+            flex: 1;
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        footer.info-line {
+            padding: 10px;
+            background: #303030;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .restaurant {
+            display: flex;
+            width: 100%;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin-bottom: 20px;
+            align-items: stretch;
+        }
+
+        .restaurant-image {
+            flex-basis: 40%;
+            max-width: 40%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .restaurant-description {
+            flex-basis: 60%;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1, h2, h3, p, a, strong, ul li {
+            color: #333333; /* Dark color for specific elements */
+        }
+        
+        h1 {
+            color: #ffffff; /* Light color for headings */
+        }
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-header">
+        <h1>Welcome To Dubai</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li style="color: white"><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="car.html">Car Rental & Taxi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="layout">
+            <aside>
+                <h2>Popular Cuisines</h2>
+                <ul>
+                    <li>Arabic</li>
+                    <li>Indian</li>
+                    <li>Italian</li>
+                    <li>Japanese</li>
+                    <li>Lebanese</li>
+                </ul>
+            </aside>
+            <section class="content">
+                <h2>Top Restaurants in Dubai</h2>
+                <p>Explore the best dining experiences in the city, offering a variety of cuisines and special dishes. From traditional Arabic flavors to modern fusion gastronomy, Dubai's culinary scene is as diverse and dynamic as the city itself.</p>
+            </section>
+        </div>
+
+        <div class="restaurant-container">
+            <!-- Restaurant 1 -->
+            <div class="restaurant">
+                <img src="/assets/images/al-mahara.jpg" alt="Burj Al Arab Restaurant" class="restaurant-image">
+                <div class="restaurant-description">
+                    <h3>1. Al Mahara</h3>
+                    <p>Experience underwater dining with exquisite seafood selections at the luxurious Burj Al Arab.</p>
+                    <p><strong>Phone:</strong> +971 234 5678</p>
+                    <p><strong>Address:</strong> Burj Al Arab, Dubai, UAE</p>
+                    <p><strong>Recommendations:</strong> Lobster bisque and caviar.</p>
+                    <p><strong>Price:</strong> $$$ (High-end)</p>
+                    <p><a href="https://goo.gl/maps/almahararestaurant" target="_blank">View on Google Maps</a></p>
+                </div>
+            </div>
+
+            <!-- Restaurant 2 -->
+            <div class="restaurant">
+                <img src="/assets/images/zuma.jpg" alt="Zuma Restaurant" class="restaurant-image">
+                <div class="restaurant-description">
+                    <h3>2. Zuma</h3>
+                    <p>Modern Japanese cuisine in the heart of Dubai, renowned for its sushi and robata grill.</p>
+                    <p><strong>Phone:</strong> +971 345 6789</p>
+                    <p><strong>Address:</strong> Gate Village 06, DIFC, Dubai, UAE</p>
+                    <p><strong>Recommendations:</strong> Miso marinated black cod.</p>
+                    <p><strong>Price:</strong> $$$ (High-end)</p>
+                    <p><a href="https://goo.gl/maps/zumarestaurant" target="_blank">View on Google Maps</a></p>
+                </div>
+            </div>
+
+            <!-- Restaurant 3 -->
+            <div class="restaurant">
+                <img src="/assets/images/pierchic.jpg" alt="Pierchic Restaurant" class="restaurant-image">
+                <div class="restaurant-description">
+                    <h3>3. Pierchic</h3>
+                    <p>Romantic waterfront dining with European cuisine and stunning views of the Arabian Gulf.</p>
+                    <p><strong>Phone:</strong> +971 456 7890</p>
+                    <p><strong>Address:</strong> Al Qasr, Madinat Jumeirah, Dubai, UAE</p>
+                    <p><strong>Recommendations:</strong> Seafood platter.</p>
+                    <p><strong>Price:</strong> $$$ (High-end)</p>
+                    <p><a href="https://goo.gl/maps/pierchicrestaurant" target="_blank">View on Google Maps</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="info-line">
+        <p>&copy; 2024 Fall Zainab Al-Zanbouri's Favorite Students. All rights reserved. </p>
+    </footer>
+</body>
+</html>
